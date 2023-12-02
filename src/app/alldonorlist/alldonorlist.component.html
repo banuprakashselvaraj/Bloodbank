@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Blood Group</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Alcohol Consumption</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of alldonorList">
+          <td>{{ item.Rid }}</td>
+          <td>{{ item.Name }}</td>
+          <td>{{ item.Dob}}</td>
+          <td>{{ item.BloodGroup}}</td>
+          <td>{{ item.PhoneNumber}}</td>
+          <td>{{ item.Address}}</td>
+          <td>{{ item.Description}}</td>
+          <td>{{ item.AlcoholConsumption}}</td>
+            <td>
+            </td>
+        </tr>
+ 

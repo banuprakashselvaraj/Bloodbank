@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<p class="text-center fs-3 fw-bolder text-danger">Donor's Registration</p>
+<div class="d-flex justify-content-center align-self-center">
+  <form #form='ngForm'>
+    <div class="row mb-4">
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Name</label><br>
+        </div>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="Name" [(ngModel)]="Name" placeholder="Enter Name" required>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Date of Birth</label><br>
+        </div>
+        <div class="col-sm-11">
+          <input type="date" class="form-control" name="dob" [(ngModel)]="Dob" placeholder="Enter Date of Birth" required>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Blood Group</label><br>
+        </div>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="bloodgroup" [(ngModel)]="BloodGroup" placeholder="Enter Blood Group" required>
+        </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-sm-6">
+        <label class="col-form-label fw-bolder">Phone Number</label><br>
+      </div>
+      <div class="col-sm-11">
+        <input type="phone" class="form-control" name="Phonenumber" [(ngModel)]="PhoneNumber" placeholder="Enter Phone Number" required>
+      </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Address</label><br>
+        </div>
+        <div class="col-sm-11">
+          <textarea type="text" class="form-control" name="Addresses" [(ngModel)]="Address" placeholder="Enter Address" rows="3" required></textarea>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Description</label><br>
+        </div>
+        <div class="col-sm-11">
+          <textarea type="text" class="form-control" name="description" [(ngModel)]="Description" placeholder="Enter Description" rows="3" required></textarea>
+        </div>
+    </div>
+    <label class="col-form-label fw-bolder">Alcohol Consumption</label><br>
+
+    <input type="radio" id="html" name="AlcoholConsumption" value = "yes" [(ngModel)]="AlcoholConsumption">
+      <label for="html">Yes</label><br>
+        <input type="radio" id="css" name="AlcoholConsumption" value = "no" [(ngModel)]="AlcoholConsumption">
+    <label for="css">No</label><br>
+    <br>
+    <br>
+    <div class="ml-3 bd-highlight" style="width: 40%;">
+      <img [src]=PhotoFilePath height="250px;" width="200px;">
+      <input type="file" (change)="uploadPhoto($event)" class="mt-2" />
+      </div>
+    <br>
+    <button type="submit" class="btn btn-danger " (click)="regdon()" [disabled]="form.invalid">Register</button>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>

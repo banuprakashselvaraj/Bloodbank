@@ -1,0 +1,119 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<!-- 
+
+<p></p>
+
+<div class="d-flex flex-row">
+  <input [(ngModel)]="FoodCodeFilter" class="form-control"
+  (keyup)="FilterFn()" placeholder="FoodCode Filter">
+
+  <button type="button" class="btn btn-light"
+  (click)="sortResult('FoodCode',true)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+  </svg>
+</button>
+<button type="button" class="btn btn-light"
+  (click)="sortResult('FoodCode',false)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 8.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+  </svg>
+</button>
+</div>
+<p></p>
+<div class="d-flex flex-row">
+  <input [(ngModel)]="FoodNameFilter" class="form-control"
+  (keyup)="FilterFn()" placeholder="FoodName Filter">
+
+  <button type="button" class="btn btn-light"
+  (click)="sortResult('FoodName',true)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+  </svg>
+</button>
+<button type="button" class="btn btn-light"
+  (click)="sortResult('FoodName',false)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 8.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+  </svg>
+</button>
+
+</div>
+<p></p>-->
+
+<app-navbar></app-navbar>
+
+<div class="d-flex flex-row">
+  <input [(ngModel)]="DonorNameFilter" class="form-control"
+  (keyup)="FilterFn()" placeholder="Donor's Name Filter">
+
+  <button type="button" class="btn btn-light"
+  (click)="sortResult('Name',true)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+  </svg>
+</button>
+<button type="button" class="btn btn-light"
+  (click)="sortResult('Name',false)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 8.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+  </svg>
+</button>
+</div>
+<p></p>
+<div class="d-flex flex-row">
+  <input [(ngModel)]="DonorCityFilter" class="form-control"
+  (keyup)="FilterFn()" placeholder="Donor's Address Filter">
+
+  <button type="button" class="btn btn-light"
+  (click)="sortResult('Address',true)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+  </svg>
+</button>
+<button type="button" class="btn btn-light"
+  (click)="sortResult('Address',false)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 8.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+  </svg>
+</button>
+</div>
+<p></p>
+<div class="d-flex flex-row">
+  <input [(ngModel)]="DonorBloodGroupFilter" class="form-control"
+  (keyup)="FilterFn()" placeholder="Donor's BloodGroup Filter">
+
+  <button type="button" class="btn btn-light"
+  (click)="sortResult('BloodGroup',true)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+  </svg>
+</button>
+<button type="button" class="btn btn-light"
+  (click)="sortResult('BloodGroup',false)">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 8.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+  </svg>
+</button>
+</div>
+<p></p>
+<br>
+<br>
+<div class="columns" *ngFor="let item of DonorfindList">
+    <ul class="price">
+      <li class="header">Donor's Detail</li>
+      <li><img src= "{{ item.Image}} "class="center"></li>
+      <li class = "font fw-bold">{{ item.Rid}}</li>
+      <li class = "font fw-bold">{{ item.Name }}</li>
+      <li class = "font fw-bold">{{ item.Dob }}</li>
+      <li class = "font fw-bold">{{ item.BloodGroup }}</li>
+      <li class = "font fw-bold">{{ item.PhoneNumber }}</li>
+      <li class = "font fw-bold">{{ item.Address }}</li>
+      <li class = "font fw-bold">{{ item.Description }}</li>
+      <li class = "font fw-bold">{{ item.AlcoholConsumption }}</li>
+    </ul>
+  </div>

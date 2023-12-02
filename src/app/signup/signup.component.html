@@ -1,0 +1,48 @@
+<p class="text-center fs-3 fw-bolder text-primary">Sign Up</p>
+<div class="d-flex justify-content-center align-self-center">
+  <form #form='ngForm'>
+    <div class="row mb-4">
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Name</label><br>
+        </div>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="Name" [(ngModel)]="Name" placeholder="Enter Name" required>
+        </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-sm-6">
+        <label class="col-form-label fw-bolder">Phone Number</label><br>
+      </div>
+      <div class="col-sm-11">
+        <input type="number" class="form-control" name="Phonenumber" [(ngModel)]="PhoneNumber" placeholder="Enter Phone Number" required>
+      </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Address</label><br>
+        </div>
+        <div class="col-sm-11">
+          <textarea type="text" class="form-control" name="Addresses" [(ngModel)]="Address" placeholder="Enter Address" rows="3" required></textarea>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-6">
+          <label class="col-form-label fw-bolder">Email</label><br>
+        </div>
+        <div class="col-sm-11">
+          <textarea type="text" class="form-control" name="Emailid" [(ngModel)]="EmailId" placeholder="Enter Email" rows="3" required></textarea>
+        </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-sm-6">
+        <label class="col-form-label fw-bolder">Password</label><br>
+      </div>
+      <div class="col-sm-11">
+        <input type="password" class="form-control" name="Passwords" [(ngModel)]="Password" placeholder="Enter Password" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="signUp()" [disabled]="form.invalid">Sign Up</button>
+</form>
+</div>

@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<div class="columns" *ngFor="let item of BloodCenterList">
+    <ul class="price">
+      <li class="header">BloodBank Center</li>
+      <li><img src= "{{ item.Image}} "class="center"></li>
+      <li class = "font fw-bold">Blood Center  Name    :{{ item.Name}}</li>
+      <li class = "font fw-bold">Blood Center Location :{{ item.Location }}</li>
+      <li class = "font fw-bold">Blood Center Contact  :{{ item.PhoneNumber }}</li>
+      
+    </ul>
+    
+  </div>
